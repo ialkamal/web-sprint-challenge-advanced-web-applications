@@ -1,0 +1,8 @@
+import axiosWithAuth from "../utils/axiosWithAuth";
+
+const fetchColors = () => {
+   return axiosWithAuth().get("/api/colors").then((res) => {
+        return res}).catch((err) => {return err});
+}
+
+export default fetchColors
